@@ -8,6 +8,14 @@ a:focus,
 a:hover {
     color: #fff;
 }
+/* trying to figure out how to utilize CSS for image at top of my page */
+  img.a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+  }
+/* above is my attempt to utlize css for image at top of my page */
 
 /* Custom default button */
 .btn-secondary,
