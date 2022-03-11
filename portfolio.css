@@ -8,6 +8,24 @@ a:focus,
 a:hover {
     color: #fff;
 }
+/* just moved the below from index.html to portfolo.css */
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+  }
+}
+/* just moved the above from index.html to portfolio.css  */
+
+
 /* trying to figure out how to utilize CSS for image at top of my page */
   img.a {
     display: block;
