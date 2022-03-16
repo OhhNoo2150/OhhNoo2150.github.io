@@ -181,12 +181,21 @@ body {
     /* The "next slide button" will be at the right */
     right: 0;
   }
-  
+  /* BELOW trying to fix carousel image sizes BELOW*/
+  #myCarousel img {
+
+    width: auto;
+    height: 225px;
+    max-height: 225px;
+    image-orientation: ;
+    
+    }
+/* ABOVE trying to fix carousel image sizes ABOVE*/
   .slides {
     display: flex;
     transition: transform 0.5s;
     transform: translateX(calc(-100% * var(--current-slide)));
-    object-fit: cover;
+    
     
   }
   
