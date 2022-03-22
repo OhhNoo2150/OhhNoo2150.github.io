@@ -3,9 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <title>Map</title>
-    <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
-    <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" rel="stylesheet"/>
-    <link href ="./map.css" rel="stylesheet">  
+    
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+<link href ="./map.css" rel="stylesheet">  
     
 </head>
 <body>
@@ -15,15 +17,46 @@
           <nav class="nav nav-masthead justify-content-center">
           <a class="nav-link" href="./index.html">Home</a>
           <a class="nav-link" href="./about.html">My Coding Journey</a>
-          <a class="nav-link active" href="./projects.html">Projects</a>
-          <a class="nav-link" href="./map.html">Map</a>
+          <a class="nav-link" href="./projects.html">Projects</a>
+          <a class="nav-link active" href="./map.html">Map</a>
       </nav>
       </div>
       </header>
-<div id="map"></div>
+      <div id='map' style='width: 400px; height: 300px;'></div>
+      
+<br>
+<footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p>Created with help from <a href="https://xpro.mit.edu/">MIT xPro</a></p>
+      <p>I used <a href="https://getbootstrap.com/">Bootstrap</a></p>
+      <a href="Mailto: Daniel.I.Rivera@protonmail.com" class="btn btn-lg btn-secondary">Email me</a>
+      <br>
+    <div class="wrapper">
+      <a href="https://www.facebook.com/OhhNoo" class="icon facebook">
+    <div class="tooltip">Facebook</div>
+      <span><i class="fab fa-facebook-f"></i></span>
+      </a>
+      <a href="https://twitter.com/Boricua2150" class="icon twitter">
+    <div class="tooltip">Twitter</div>
+      <span><i class="fab fa-twitter"></i></span>
+      </a>
+      <a href="https://www.instagram.com/ohhnoo2150/" class="icon instagram">
+    <div class="tooltip">Instagram</div>
+      <span><i class="fab fa-instagram"></i></span>
+      </a>
+      <a href="https://github.com/OhhNoo2150" class="icon github">
+    <div class="tooltip">Github</div>
+      <span><i class="fab fa-github"></i></span>
+      </a>
+      <a href="https://www.linkedin.com/in/danielrivera/" class="icon linkedin">
+    <div class="tooltip">LinkedIn</div>
+      <span><i class="fab fa-linkedin"></i></span>
+      </a>
+    </div>
+    </div>
+ </footer>
+<script src = "./map.js"></script>
+<script type='text/javascript' src='config.js'></script> 
 
-<script src = "./map.js">
-
-</script>
 </body>
 </html>
