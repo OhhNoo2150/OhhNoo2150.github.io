@@ -8,5 +8,3 @@ const map = new mapboxgl.Map({
 var marker = new mapboxgl.Marker()
     .setLngLat([-66.4069444,18.3277778])
     .addTo(map);
-
-    var worldMarkers = []
