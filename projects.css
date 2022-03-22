@@ -25,12 +25,12 @@ a:hover {
 }
 /* just moved the above from index.html to portfolio.css  */
 
-/* trying to figure out how to utilize CSS for image at top of my page */
-.img-a {
-  width: 400px;
-}
+
    
 /* above is my attempt to utlize css for image at top of my page */
+
+/*map styling below*/
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
 
 
 /* Custom default button */
@@ -67,6 +67,9 @@ body {
   */
     background: url("LaPerlaSanJuan.jpeg") no-repeat center center fixed;
     background-size: cover;
+}
+body.p {
+    justify-content: center;
 }
 
 /* Cover Container is the div surrounding your navigation bar. You might want this to be 100% width */
@@ -120,22 +123,7 @@ body {
     }
 }
 
-/*
- * Cover
- */
-.cover {
-    padding: 1.5rem 1.5rem;
-    display:flexbox;
-    flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.30);
-    border-radius: 20%;
-    border: 2px solid #fff;
-}
 
-.cover .btn-lg {
-    padding: 0.75rem 1.25rem;
-    font-weight: 700;
-}
 /*
  * Footer
  */
@@ -143,17 +131,6 @@ body {
     color: rgba(255, 255, 255, 0.5);
 }
 
-/* Modules */
-.module1 {
-    flex: 1;
-    text-align: center;
-}
-.module2 {
-    flex: 1;
-}
-.module3 {
-    flex: 1;
-}
 /* just added the below for social media buttons...if need be edit or remove */
 
 .wrapper .icon{
