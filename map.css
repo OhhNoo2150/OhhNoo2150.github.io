@@ -1,5 +1,3 @@
-body { margin:0; padding:0; }
-
 /*
  * Globals
  */
@@ -115,7 +113,10 @@ body.p {
     }
 }
 
-
+.iframe{
+  position: relative;
+  justify-content: center;
+}
 /*
  * Footer
  */
@@ -124,9 +125,11 @@ body.p {
 }
 
 /* just added the below for social media buttons...if need be edit or remove */
-
+.footer {
+  justify-content: bottom;
+}
 .wrapper .icon{
-    position: relative;
+    position: bottom ;
     background-color: #ffffff;
     border-radius: 50%;
     margin: 10px;
