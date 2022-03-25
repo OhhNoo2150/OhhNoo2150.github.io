@@ -2,38 +2,53 @@
  * Globals
  */
 
+
 /* Links */
+
 a,
 a:focus,
 a:hover {
     color: #fff;
 }
+
+
 /* just moved the below from index.html to portfolo.css */
+
 .bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 @media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-  }
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
 }
+
+
 /* just moved the above from index.html to portfolio.css  */
 
+
 /* trying to figure out how to utilize CSS for image at top of my page */
+
 .img-a {
-  width: 400px;
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    border-radius: 15px;
+    /* ie8 */
 }
-   
+
+
 /* above is my attempt to utlize css for image at top of my page */
 
 
 /* Custom default button */
+
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
@@ -44,9 +59,12 @@ a:hover {
     border: 0.05rem solid #fff;
 }
 
+
 /*
  * Base structure
  */
+
+
 /*  This line of code will mess up your background photo!
 html,
 body {
@@ -54,7 +72,9 @@ body {
     background-color: #333;
 } */
 
+
 /* Body Tag should not be used to style text, should be class or id's or the text's encapsulating tag...S */
+
 body {
     display: flex;
     color: red;
@@ -69,17 +89,19 @@ body {
     background-size: cover;
 }
 
+
 /* Cover Container is the div surrounding your navigation bar. You might want this to be 100% width */
+
 .cover-container {
-    max-width: 75%;
-  
+    max-width: auto;
 }
+
 
 /*
  * Header
  */
 
- .masthead {
+.masthead {
     margin-bottom: 2rem;
 }
 
@@ -114,18 +136,19 @@ body {
     .masthead-brand {
         float: left;
     }
-
     .nav-masthead {
         float: right;
     }
 }
 
+
 /*
  * Cover
  */
+
 .cover {
     padding: 1.5rem 1.5rem;
-    display:flexbox;
+    display: flexbox;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.30);
     border-radius: 20%;
@@ -136,42 +159,55 @@ body {
     padding: 0.75rem 1.25rem;
     font-weight: 700;
 }
+
+
 /*-------------------h2 element manipulations below-----------------*/
+
 .h2#zoomOut img {
-	-webkit-transform: scale(1.5);
-	transform: scale(1.5);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
 }
+
 .h2#zoomOut.img {
-  width: 300px;
+    width: 300px;
 }
 
 .h2#zoomOut:hover img {
-	-webkit-transform: scale(1);
-	transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
+
+
 /*
  * Footer
  */
+
 .mastfoot {
     color: rgba(255, 255, 255, 0.5);
 }
 
+
 /* Modules */
+
 .module1 {
     flex: 1;
     text-align: center;
 }
+
 .module2 {
     flex: 1;
 }
+
 .module3 {
     flex: 1;
 }
+
+
 /* just added the below for social media buttons...if need be edit or remove */
 
-.wrapper .icon{
+.wrapper .icon {
     position: relative;
     background-color: #ffffff;
     border-radius: 50%;
@@ -187,8 +223,9 @@ body {
     transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     color: #333;
     text-decoration: none;
-  }
-  .wrapper .tooltip {
+}
+
+.wrapper .tooltip {
     position: absolute;
     top: 0;
     line-height: 1.5;
@@ -201,8 +238,9 @@ body {
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  .wrapper .tooltip::before {
+}
+
+.wrapper .tooltip::before {
     position: absolute;
     content: "";
     height: 8px;
@@ -212,44 +250,51 @@ body {
     left: 50%;
     transform: translate(-50%) rotate(45deg);
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  .wrapper .icon:hover .tooltip {
+}
+
+.wrapper .icon:hover .tooltip {
     top: -45px;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-  }
-  .wrapper .icon:hover span,
-  .wrapper .icon:hover .tooltip {
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-  }
-  .wrapper .facebook:hover,
-  .wrapper .facebook:hover .tooltip,
-  .wrapper .facebook:hover .tooltip::before {
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
     background-color: #3b5999;
     color: #ffffff;
-  }
-  .wrapper .twitter:hover,
-  .wrapper .twitter:hover .tooltip,
-  .wrapper .twitter:hover .tooltip::before {
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
     background-color: #46c1f6;
     color: #ffffff;
-  }
-  .wrapper .instagram:hover,
-  .wrapper .instagram:hover .tooltip,
-  .wrapper .instagram:hover .tooltip::before {
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
     background-color: #e1306c;
     color: #ffffff;
-  }
-  .wrapper .github:hover,
-  .wrapper .github:hover .tooltip,
-  .wrapper .github:hover .tooltip::before {
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
     background-color: #333333;
     color: #ffffff;
-  }
-  .wrapper .linkedin:hover,
-  .wrapper .linkedin:hover .tooltip,
-  .wrapper .linkedin:hover .tooltip::before {
+}
+
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
     background-color: #de463b;
     color: #ffffff;
-  }
+}

@@ -2,38 +2,39 @@
  * Globals
  */
 
+
 /* Links */
+
 a,
 a:focus,
 a:hover {
     color: #fff;
 }
+
+
 /* just moved the below from index.html to portfolo.css */
+
 .bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 @media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-  }
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
 }
+
+
 /* just moved the above from index.html to portfolio.css  */
 
 
-   
-/* above is my attempt to utlize css for image at top of my page */
-
-/*map styling below*/
-#map { position: absolute; top: 0; bottom: 0; width: 100%; }
-
-
 /* Custom default button */
+
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
@@ -44,9 +45,12 @@ a:hover {
     border: 0.05rem solid #fff;
 }
 
+
 /*
  * Base structure
  */
+
+
 /*  This line of code will mess up your background photo!
 html,
 body {
@@ -54,7 +58,9 @@ body {
     background-color: #333;
 } */
 
+
 /* Body Tag should not be used to style text, should be class or id's or the text's encapsulating tag...S */
+
 body {
     display: flex;
     color: red;
@@ -68,21 +74,38 @@ body {
     background: url("LaPerlaSanJuan.jpeg") no-repeat center center fixed;
     background-size: cover;
 }
+
 body.p {
     justify-content: center;
 }
 
+
 /* Cover Container is the div surrounding your navigation bar. You might want this to be 100% width */
+
 .cover-container {
     max-width: 75%;
-  
 }
+
+
+/* css for main body content below*/
+
+.main-content {
+    justify-content: center;
+    margin: 2em;
+    padding: 2em;
+    display: inline-flex;
+}
+
+.main-content .btn-outline-dark {
+    justify-content: space-around;
+}
+
 
 /*
  * Header
  */
 
- .masthead {
+.masthead {
     margin-bottom: 2rem;
 }
 
@@ -117,7 +140,6 @@ body.p {
     .masthead-brand {
         float: left;
     }
-
     .nav-masthead {
         float: right;
     }
@@ -127,13 +149,16 @@ body.p {
 /*
  * Footer
  */
- .mastfoot {
+
+.mastfoot {
     color: rgba(255, 255, 255, 0.5);
+    bottom: auto;
 }
+
 
 /* just added the below for social media buttons...if need be edit or remove */
 
-.wrapper .icon{
+.wrapper .icon {
     position: relative;
     background-color: #ffffff;
     border-radius: 50%;
@@ -149,8 +174,9 @@ body.p {
     transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     color: #333;
     text-decoration: none;
-  }
-  .wrapper .tooltip {
+}
+
+.wrapper .tooltip {
     position: absolute;
     top: 0;
     line-height: 1.5;
@@ -163,8 +189,9 @@ body.p {
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  .wrapper .tooltip::before {
+}
+
+.wrapper .tooltip::before {
     position: absolute;
     content: "";
     height: 8px;
@@ -174,44 +201,51 @@ body.p {
     left: 50%;
     transform: translate(-50%) rotate(45deg);
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  .wrapper .icon:hover .tooltip {
+}
+
+.wrapper .icon:hover .tooltip {
     top: -45px;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-  }
-  .wrapper .icon:hover span,
-  .wrapper .icon:hover .tooltip {
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-  }
-  .wrapper .facebook:hover,
-  .wrapper .facebook:hover .tooltip,
-  .wrapper .facebook:hover .tooltip::before {
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
     background-color: #3b5999;
     color: #ffffff;
-  }
-  .wrapper .twitter:hover,
-  .wrapper .twitter:hover .tooltip,
-  .wrapper .twitter:hover .tooltip::before {
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
     background-color: #46c1f6;
     color: #ffffff;
-  }
-  .wrapper .instagram:hover,
-  .wrapper .instagram:hover .tooltip,
-  .wrapper .instagram:hover .tooltip::before {
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
     background-color: #e1306c;
     color: #ffffff;
-  }
-  .wrapper .github:hover,
-  .wrapper .github:hover .tooltip,
-  .wrapper .github:hover .tooltip::before {
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
     background-color: #333333;
     color: #ffffff;
-  }
-  .wrapper .linkedin:hover,
-  .wrapper .linkedin:hover .tooltip,
-  .wrapper .linkedin:hover .tooltip::before {
+}
+
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
     background-color: #de463b;
     color: #ffffff;
-  }
+}
