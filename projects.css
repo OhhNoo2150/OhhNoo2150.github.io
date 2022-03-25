@@ -12,6 +12,20 @@ a:hover {
 }
 
 
+/* confetti styling below */
+
+.confetti {
+    max-width: auto;
+    display: block;
+    margin: auto;
+    border: 1px solid #ddd;
+    user-select: none;
+}
+
+
+/* confetti styling above */
+
+
 /* just moved the below from index.html to portfolo.css */
 
 .bd-placeholder-img {
@@ -119,7 +133,7 @@ body.p {
     color: rgba(228, 9, 9, 0.5);
     background-color: transparent;
     border-bottom: 0.25rem solid transparent;
-    justify-content: right;
+    justify-content: center;
 }
 
 .nav-masthead .nav-link:hover,
@@ -150,9 +164,8 @@ body.p {
  * Footer
  */
 
-.mastfoot {
+.mastfoot .inner {
     color: rgba(255, 255, 255, 0.5);
-    bottom: auto;
 }
 
 
