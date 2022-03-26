@@ -16,10 +16,26 @@ a:hover {
 
 .confetti {
     max-width: auto;
-    display: block;
-    margin: auto;
-    border: 1px solid #ddd;
+    display: fixed;
+    margin: 0;
     user-select: none;
+}
+
+.container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    width: 100vw;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -85,8 +101,9 @@ body {
               UPDATE IMAGE BELOW
       ----------------------------------
   */
-    background: url("LaPerlaSanJuan.jpeg") no-repeat center center fixed;
-    background-size: cover;
+    /* background: url("LaPerlaSanJuan.jpeg") no-repeat center center fixed;
+    background-size: cover; */
+    z-index: 100;
 }
 
 body.p {
@@ -97,7 +114,7 @@ body.p {
 /* Cover Container is the div surrounding your navigation bar. You might want this to be 100% width */
 
 .cover-container {
-    max-width: 75%;
+    max-width: 100%;
 }
 
 
