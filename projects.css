@@ -2,6 +2,11 @@
  * Globals
  */
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 
 /* Links */
 
@@ -12,37 +17,7 @@ a:hover {
 }
 
 
-/* confetti styling below */
-
-.confetti {
-    max-width: auto;
-    display: fixed;
-    margin: 0;
-    user-select: none;
-}
-
-.container {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-}
-
-.navbar {
-    display: flex;
-    width: 100vw;
-}
-
-.main-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* confetti styling above */
-
-
-/* just moved the below from index.html to portfolo.css */
+/* just moved the below from index.html to portfolio.css */
 
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -53,14 +28,12 @@ a:hover {
     user-select: none;
 }
 
-@media (min-width: 768px) {
+
+/* @media (min-width: 768px) {
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
     }
-}
-
-
-/* just moved the above from index.html to portfolio.css  */
+} */
 
 
 /* Custom default button */
@@ -92,7 +65,7 @@ body {
 /* Body Tag should not be used to style text, should be class or id's or the text's encapsulating tag...S */
 
 body {
-    display: flex;
+    display: flexbox;
     color: red;
     text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
     box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
@@ -103,54 +76,41 @@ body {
   */
     background: url("LaPerlaSanJuan.jpeg") no-repeat center center fixed;
     background-size: cover;
-    z-index: 100;
-}
-
-body.p {
-    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
 }
 
 
 /* Cover Container is the div surrounding your navigation bar. You might want this to be 100% width */
 
-.cover-container {
+
+/* .cover-container {
     max-width: 100%;
-}
-
-
-/* css for main body content below*/
-
-.main-content {
-    justify-content: center;
-    margin: 2em;
-    padding: 2em;
-    display: inline-flex;
-}
-
-.main-content .btn-outline-dark {
-    justify-content: space-around;
-}
+} */
 
 
 /*
  * Header
  */
 
-.masthead {
+
+/* .masthead {
     margin-bottom: 2rem;
-}
+} */
 
-.masthead-brand {
+
+/* .masthead-brand {
     margin-bottom: 0;
-}
+} */
 
-.nav-masthead .nav-link {
+
+/* .nav-masthead .nav-link {
     padding: 0.25rem 0;
     font-weight: 700;
     color: rgba(228, 9, 9, 0.5);
     background-color: transparent;
     border-bottom: 0.25rem solid transparent;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .nav-masthead .nav-link:hover,
@@ -166,6 +126,7 @@ body.p {
     color: rgb(33, 36, 233);
     border-bottom-color: rgb(247, 232, 25);
 }
+/* tag below helps with mobile device
 
 @media (min-width: 48em) {
     .masthead-brand {
@@ -174,6 +135,16 @@ body.p {
     .nav-masthead {
         float: right;
     }
+} */
+
+
+/* .iframe {
+    position: relative;
+    justify-content: center;
+} */
+
+.map-container {
+    position: relative;
 }
 
 
@@ -181,15 +152,109 @@ body.p {
  * Footer
  */
 
-.mastfoot .inner {
-    color: rgba(255, 255, 255, 0.5);
+.cover-container {
+    justify-content: center;
 }
+
+
+/* .mastfoot {
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute
+} */
 
 
 /* just added the below for social media buttons...if need be edit or remove */
 
-.wrapper .icon {
+.main-text {
+    width: 50vw;
+}
+
+
+/* This is for the footer container */
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 2em;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    margin-bottom: 2em;
+    /* justify-content: bottom; */
+}
+
+
+/* This is the container for the social media icons */
+
+.social-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
     position: relative;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.25);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 15px;
+    left: 0;
+    bottom: 0;
+}
+
+.copy-text {
+    color: aqua;
+}
+
+
+/* This is for the white circles */
+
+.icon {
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 2em;
+    height: 2em;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Hover effects for social media icons and circle */
+
+.icon:hover {
+    transform: scale(150%)
+}
+
+
+/* This selects all the social icon images */
+
+.facebook,
+.twitter,
+.instagram,
+.github,
+.linkedin {
+    color: blue;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Social Icon Circles */
+
+
+/* .footer .wrapper .icon {
+    position: bottom;
     background-color: #ffffff;
     border-radius: 50%;
     margin: 10px;
@@ -204,9 +269,9 @@ body.p {
     transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     color: #333;
     text-decoration: none;
-}
+} */
 
-.wrapper .tooltip {
+.footer .social-wrapper .tooltip {
     position: absolute;
     top: 0;
     line-height: 1.5;
@@ -221,7 +286,7 @@ body.p {
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.wrapper .tooltip::before {
+.footer .social-wrapper .tooltip::before {
     position: absolute;
     content: "";
     height: 8px;
@@ -233,49 +298,49 @@ body.p {
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.wrapper .icon:hover .tooltip {
+.footer .social-wrapper .icon:hover .tooltip {
     top: -45px;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
 }
 
-.wrapper .icon:hover span,
-.wrapper .icon:hover .tooltip {
+.footer .social-wrapper .icon:hover span,
+.footer .social-wrapper .icon:hover .tooltip {
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
 
-.wrapper .facebook:hover,
-.wrapper .facebook:hover .tooltip,
-.wrapper .facebook:hover .tooltip::before {
+.footer .social-wrapper .facebook:hover,
+.footer .social-wrapper .facebook:hover .tooltip,
+.footer .social-wrapper .facebook:hover .tooltip::before {
     background-color: #3b5999;
     color: #ffffff;
 }
 
-.wrapper .twitter:hover,
-.wrapper .twitter:hover .tooltip,
-.wrapper .twitter:hover .tooltip::before {
+.footer .social-wrapper .twitter:hover,
+.footer .social-wrapper .twitter:hover .tooltip,
+.footer .social-wrapper .twitter:hover .tooltip::before {
     background-color: #46c1f6;
     color: #ffffff;
 }
 
-.wrapper .instagram:hover,
-.wrapper .instagram:hover .tooltip,
-.wrapper .instagram:hover .tooltip::before {
+.footer .social-wrapper .instagram:hover,
+.footer .social-wrapper .instagram:hover .tooltip,
+.footer .social-wrapper .instagram:hover .tooltip::before {
     background-color: #e1306c;
     color: #ffffff;
 }
 
-.wrapper .github:hover,
-.wrapper .github:hover .tooltip,
-.wrapper .github:hover .tooltip::before {
+.footer .social-wrapper .github:hover,
+.footer .social-wrapper .github:hover .tooltip,
+.footer .social-wrapper .github:hover .tooltip::before {
     background-color: #333333;
     color: #ffffff;
 }
 
-.wrapper .linkedin:hover,
-.wrapper .linkedin:hover .tooltip,
-.wrapper .linkedin:hover .tooltip::before {
+.footer .social-wrapper .linkedin:hover,
+.footer .social-wrapper .linkedin:hover .tooltip,
+.footer .social-wrapper .linkedin:hover .tooltip::before {
     background-color: #de463b;
     color: #ffffff;
 }
