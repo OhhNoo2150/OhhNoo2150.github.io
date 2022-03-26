@@ -101,8 +101,8 @@ body {
               UPDATE IMAGE BELOW
       ----------------------------------
   */
-    /* background: url("LaPerlaSanJuan.jpeg") no-repeat center center fixed;
-    background-size: cover; */
+    background: url("LaPerlaSanJuan.jpeg") no-repeat center center fixed;
+    background-size: cover;
     z-index: 100;
 }
 
