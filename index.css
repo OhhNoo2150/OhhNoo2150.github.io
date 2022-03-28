@@ -3,6 +3,8 @@
 * {
     margin: 0;
     padding: 0;
+    background: url("LaPerlaSanJuan.jpeg") no-repeat center center fixed;
+    background-size: cover;
 }
 
 
@@ -19,8 +21,6 @@
 /* ------------------ Body Code Below ------------------ */
 
 .body {
-    background: url("LaPerlaSanJuan.jpeg") no-repeat center center fixed;
-    background-size: cover;
     height: 100vh;
     overflow: hidden;
 }
