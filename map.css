@@ -1,0 +1,213 @@
+/* ------------------ Global Code Below ------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* ------------------ Header Code Below ------------------ */
+
+.navbar {
+    display: flex;
+    width: 100vw;
+    text-decoration: goldenrod;
+    background-color: maroon;
+    flex-direction: row;
+}
+
+
+/* ------------------ Body Code Below ------------------ */
+
+.body {
+    background: url("LaPerlaSanJuan.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.h1 {
+    color: red;
+    justify-content: inline-flex;
+    text-align: center;
+}
+
+p {
+    justify-content: center;
+    text-align: center;
+}
+
+.main-content {
+    display: inline-flexbox;
+    color: red;
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    height: auto;
+    width: auto;
+    /* 5px rounded corners */
+}
+
+iframe {
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: auto;
+    width: auto;
+    border-image-repeat: round;
+}
+
+
+/* ------------------ Footer Code Below ------------------ */
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 2em;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    margin-bottom: 2em;
+}
+
+
+/* This is the container for the social media icons */
+
+.social-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.25);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 15px;
+    left: 0;
+    bottom: 0;
+}
+
+.copy-text {
+    color: rgb(241, 61, 15);
+}
+
+
+/* This is for the white circles */
+
+.icon {
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 2em;
+    height: 2em;
+    transition: all 0.3s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(150%)
+}
+
+
+/* This selects all the social icon images */
+
+.facebook,
+.twitter,
+.instagram,
+.github,
+.linkedin {
+    color: blue;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .social-wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    line-height: 1.5;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.footer .social-wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.footer .social-wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.footer .social-wrapper .icon:hover span,
+.footer .social-wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.footer .social-wrapper .facebook:hover,
+.footer .social-wrapper .facebook:hover .tooltip,
+.footer .social-wrapper .facebook:hover .tooltip::before {
+    background-color: #3b5999;
+    color: #ffffff;
+}
+
+.footer .social-wrapper .twitter:hover,
+.footer .social-wrapper .twitter:hover .tooltip,
+.footer .social-wrapper .twitter:hover .tooltip::before {
+    background-color: #46c1f6;
+    color: #ffffff;
+}
+
+.footer .social-wrapper .instagram:hover,
+.footer .social-wrapper .instagram:hover .tooltip,
+.footer .social-wrapper .instagram:hover .tooltip::before {
+    background-color: #e1306c;
+    color: #ffffff;
+}
+
+.footer .social-wrapper .github:hover,
+.footer .social-wrapper .github:hover .tooltip,
+.footer .social-wrapper .github:hover .tooltip::before {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.footer .social-wrapper .linkedin:hover,
+.footer .social-wrapper .linkedin:hover .tooltip,
+.footer .social-wrapper .linkedin:hover .tooltip::before {
+    background-color: #de463b;
+    color: #ffffff;
+}
