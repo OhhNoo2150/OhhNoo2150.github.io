@@ -38,16 +38,46 @@ h1 {
 p {
     justify-content: center;
     text-align: center;
+    color: red;
+    text-align: center;
 }
 
-main-content {
+.main-content {
     display: inline-flexbox;
     color: red;
     text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
     box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
 }
 
-container {
+.embed-responsive-map-16by9 {
+    padding-top: 30%;
+}
+
+.embed-responsive-video-16by9 {
+    padding-top: 30%;
+}
+
+.embed-responsive-map-16by9 {
+    order: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.embed-responsive-video-16by9 {
+    order: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.container {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 5px;
@@ -135,9 +165,9 @@ social-wrapper {
 .linkedin {
     color: blue;
     position: relative;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .footer .social-wrapper .tooltip {
