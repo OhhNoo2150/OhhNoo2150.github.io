@@ -10,7 +10,7 @@
 /* ------------------ Header Code Below ------------------ */
 
 .navbar {
-    display: flex;
+    justify-content: space-evenly;
     width: 100vw;
     text-decoration: goldenrod;
     background-color: maroon;
@@ -23,7 +23,7 @@ body {
     background: url("LaPerlaSanJuan.jpeg") no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 h1 {
