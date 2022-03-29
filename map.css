@@ -9,12 +9,37 @@
 
 /* ------------------ Header Code Below ------------------ */
 
-.navbar {
-    justify-content: space-evenly;
-    width: 100vw;
-    text-decoration: goldenrod;
-    background-color: maroon;
-    flex-direction: row;
+.header {
+    font-size: 24px;
+    color: #86c1cf;
+    background-color: skyblue;
+    font-weight: 700;
+    flex: 0 1 auto;
+    opacity: 0.9;
+}
+
+#navbar-brand {
+    font-size: 1.5em;
+    font-family: fantasy;
+    padding-left: 3%;
+}
+
+#navbar-nav {
+    padding-right: 5%;
+    flex: 1 0 auto;
+    justify-content: end;
+}
+
+@media only screen and (max-width: 1000px) {
+    #navbar-brand {
+        display: none;
+    }
+    #navbar-nav {
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        flex: 1 1 auto;
+    }
 }
 
 
@@ -36,7 +61,7 @@ h1 {
     text-align: center;
 }
 
-body.p {
+p.ex {
     justify-content: center;
     text-align: center;
     color: red;

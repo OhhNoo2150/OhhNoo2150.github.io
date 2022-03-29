@@ -3,17 +3,42 @@
 * {
     margin: 0;
     padding: 0;
-    font: normal 16px arial, helvetica, sans-serif;
 }
 
 
 /* ------------------ Header Code Below ------------------ */
 
-.navbar {
-    justify-content: space-evenly;
-    width: 100vw;
-    text-decoration: goldenrod;
-    background-color: maroon;
+.header {
+    font-size: 24px;
+    color: #86c1cf;
+    background-color: skyblue;
+    font-weight: 700;
+    flex: 0 1 auto;
+    opacity: 0.9;
+}
+
+#navbar-brand {
+    font-size: 1.5em;
+    font-family: fantasy;
+    padding-left: 3%;
+}
+
+#navbar-nav {
+    padding-right: 5%;
+    flex: 1 0 auto;
+    justify-content: end;
+}
+
+@media only screen and (max-width: 1000px) {
+    #navbar-brand {
+        display: none;
+    }
+    #navbar-nav {
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        flex: 1 1 auto;
+    }
 }
 
 
@@ -26,14 +51,27 @@ body {
     overflow-x: hidden;
 }
 
-h1 {
+.confetti-container {
+    max-width: auto;
+    display: fixed;
+    margin: 0;
+    user-select: none;
+}
+
+.main-content h1 {
     justify-content: center;
     text-align: center;
 }
 
-h2 {
+.main-content h2 {
     justify-content: center;
     text-align: center;
+}
+
+.main-content .btn-group a {
+    padding-left: 20px;
+    padding-bottom: 50px;
+    justify-content: space-evenly;
 }
 
 .main-content {
@@ -45,12 +83,6 @@ h2 {
 
 .main-content .btn-group {
     justify-content: center;
-}
-
-.card {
-    height: 50%vw;
-    justify-content: center;
-    im
 }
 
 .container {

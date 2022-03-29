@@ -12,21 +12,25 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <a href="./index.html">Home</a>
-        <a href="./about.html">My Journey</a>
-        <a href="./projects.html">Projects</a>
-        <a href="./map.html">Map</a>
-    </div>
-    <div class="main-content">
-        <h1>This page is under construction: will be up soon(er or later)</h1>
-        <h2>click on the gifs to see my projects in action</h2>
-        <!--DO NOT forget to add styling to the below links through CSS, set sizes so they are all the same size-->
-        <div class="btn-group">
-            <a href="https://OhhNoo2150.github.io/Eyes"><img src="Kakashi_sharingan.gif " alt="Kakashi's Eyes"><br>Eyes</a>
-            <a href="https://OhhNoo2150.github.io/PacMen"><img src="pacman.gif" alt="PacMen Factory"><br>PacMen Factory</a>
-            <a href="https://OhhNoo2150.github.io/BusTracker"><img src="bus.gif" alt="Bus Tracker"><br>Bus Tracker</a>
-        </div>
+    <div id="header" class="header"></div>
+
+    <script src="./navbar.js"></script>
+    <script>
+        createNavBar();
+    </script>
+    <!--Confetti Code Below-->
+    <canvas class="confetti" id="canvas">
+        <!--Confetti Code Above-->
+        <div class="main-content">
+            <h1>This page is under construction: will be up soon(er or later)</h1>
+            <h2>click on the gifs to see my projects in action</h2>
+            <!--DO NOT forget to add styling to the below links through CSS, set sizes so they are all the same size-->
+            <div class="btn-group">
+                <a href="https://OhhNoo2150.github.io/Eyes"><img src="Kakashi_sharingan.gif " alt="Kakashi's Eyes"><br><button>Eyes</button></a>
+                <a href="https://OhhNoo2150.github.io/PacMen"><img src="pacman.gif" alt="PacMen Factory"><br><button>PacMen Factory</button></a>
+                <a href="https://OhhNoo2150.github.io/BusTracker"><img src="bus.gif" alt="Bus Tracker"><br><button>Bus Tracker</button></a>
+            </div>
+        </canvas>
     </div>
     <div class="footer">
         <div>
@@ -57,9 +61,12 @@
                     <p class="copy-text">&copy 2022 Daniel Rivera</p>
                 </div>
             </footer>
+
         </div>
     </div>
-    <script src="#"></script>
+    </div>
+
+    <script src="./projects.js"></script>
 </body>
 
 </html>
