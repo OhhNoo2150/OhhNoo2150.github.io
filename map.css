@@ -10,12 +10,36 @@
 /* ------------------ Header Code Below ------------------ */
 
 .header {
-    font-size: 24px;
+    font-size: 20px;
     color: #86c1cf;
     background-color: skyblue;
     font-weight: 700;
-    flex: 0 1 auto;
-    opacity: 0.9;
+    flex: 1 1 100px initial;
+    opacity: 0.7;
+    padding: 0px
+}
+
+.navbar-brand .logo {
+    height: 170px;
+    width: 170px;
+}
+
+.nav-item {
+    height: auto;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: row;
+    opacity: 1;
+}
+
+.nav-item img:hover {
+    box-shadow: #de463b;
+}
+
+.nav-item img {
+    height: 120px;
+    width: 120px;
 }
 
 #navbar-brand {
@@ -25,9 +49,9 @@
 }
 
 #navbar-nav {
-    padding-right: 5%;
+    padding-right: 0;
     flex: 1 0 auto;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 @media only screen and (max-width: 1000px) {

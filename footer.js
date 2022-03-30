@@ -3,18 +3,29 @@ const footer = document.getElementById('footer');
 const myFooter = `
     <p>Copyright ©
         ${currentYear}
-        <img class='d-none d-sm-inline' src="../pics/pharma2code_icon.gif" style='height: 2rem;' alt="My 'Pharma 2 Code' Logo.">
-        <span style="color:white;">code</span><span style="color:#00857c;">By</span><span style="color:lime;">Pete</span>
+        <img class='d-none d-sm-inline' src="./Images/PRFlagAnimated.gif" style='height: 2rem;' alt="My 'Pharma 2 Code' Logo.">
+        <span style="color:blue;">DIR</span><span style="color:red;">Web</span><span style="color:white;">Development</span>
     </p>
-    <a href="https://github.com/codeTrackLift/codebypete" target="_blank">
-        <img class="socialLogo" src="../pics/contact/GitHub-Mark-Light-64px.png" alt="GitHub Icon">
-    </a>
-    <a href="https://twitter.com/codeTrackLift" target="_blank">
-        <img class="socialLogo" src="../pics/contact/Twitter_social_icons-circle-white.png" alt="Twitter Icon">
-    </a>
-    <a href="https://www.linkedin.com/in/codebypete/" target="_blank">
-        <img class="socialLogo" src="../pics/contact/linkedin_white.png" alt="LinkedIn Icon">
-    </a>`;
+    <a href="https://www.facebook.com/OhhNoo" class="icon facebook">
+                    <div class="tooltip">Facebook</div>
+                    <span><i class="fab fa-facebook-f"></i></span>
+                </a>
+                <a href="https://twitter.com/Boricua2150" class="icon twitter">
+                    <div class="tooltip">Twitter</div>
+                    <span><i class="fab fa-twitter"></i></span>
+                </a>
+                <a href="https://www.instagram.com/ohhnoo2150/" class="icon instagram">
+                    <div class="tooltip">Instagram</div>
+                    <span><i class="fab fa-instagram"></i></span>
+                </a>
+                <a href="https://github.com/OhhNoo2150" class="icon github">
+                    <div class="tooltip">Github</div>
+                    <span><i class="fab fa-github"></i></span>
+                </a>
+                <a href="https://www.linkedin.com/in/danielrivera/" class="icon linkedin">
+                    <div class="tooltip">LinkedIn</div>
+                    <span><i class="fab fa-linkedin"></i></span>
+                </a>`;
 
 const injectMyFooter = () => footer.innerHTML = myFooter;
 
