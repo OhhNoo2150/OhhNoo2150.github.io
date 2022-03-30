@@ -75,11 +75,11 @@ body {
     overflow-x: hidden;
 }
 
-.confetti-container {
-    max-width: auto;
-    display: fixed;
-    margin: 0;
-    user-select: none;
+#canvas {
+    width: 100vw;
+    height: 100vw;
+    z-index: -1;
+    position: fixed;
 }
 
 .main-content h1 {
