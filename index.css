@@ -71,6 +71,11 @@
         overflow-x: hidden;
     }
     
+    .logo {
+        justify-content: center;
+        height: 50%vw;
+    }
+    
     .main-content .info-wrapper {
         margin: 10px;
         padding: 40px;

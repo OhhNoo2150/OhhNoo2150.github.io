@@ -2,7 +2,7 @@ const header = document.getElementById('header');
 const myNavBar = `
 <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
 <div class="container-fluid" id="nav-wrap">
-  <a id="navbar-brand" class="navbar-brand"><img class="logo" src="./Images/globeLogoWaterThree.gif">Daniel Rivera's Portfolio</a>
+  <a id="navbar-brand" class="navbar-brand">Daniel Rivera</a>
   <ul id="navbar-nav" class="navbar-nav d-flex flex-row bd-highlight">
     <li class="nav-item">
       <a

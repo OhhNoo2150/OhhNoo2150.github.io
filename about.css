@@ -85,21 +85,33 @@ body {
 
 /* accordion styling below */
 
-.main-content .collapse {
-    &:not(.show) {
-        display: none;
-    }
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s
 }
 
-.main-content .collapsing {
-    height: 0;
+.accordion .panel img {
+    height: 25vw;
+    width: 25vw;
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
     overflow: hidden;
-    @include transition($transition-collapse);
-    &.collapse-horizontal {
-        width: 0;
-        height: auto;
-        @include transition($transition-collapse-width);
-    }
 }
 
 
