@@ -19,6 +19,7 @@
 
 .navbar-brand img {
     height: 10vw;
+    box-shadow: #333333;
 }
 
 #navbar-brand {
@@ -96,8 +97,8 @@ body {
     text-align: center;
     align-self: auto;
     margin: auto;
-    padding: 3em;
-    box-shadow: 20px 5px 20px 5px grey;
+    padding: 5em;
+    box-shadow: 15px 5px 15px 5px red;
 }
 
 .main-content .card-1 img {
@@ -139,6 +140,7 @@ img {
     justify-content: center;
     position: absolute;
     margin-bottom: 2em;
+    align-self: flex-end;
 }
 
 
