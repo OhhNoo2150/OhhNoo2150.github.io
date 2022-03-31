@@ -3,8 +3,26 @@
     * {
         margin: 0;
         padding: 0;
+        /*cursor: none*/
     }
     /* ------------------ Header Code Below ------------------ */
+    /* trying to make a custom cursor, a little glitchy
+    .cursor {
+        width: 3rem;
+        height: 3rem;
+        border: 2px solid black;
+        border-radius: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        fill: url(./Images/PRCoqui.jpeg);
+    }
+    
+    .mouse-down {
+        border: 2px solid cornflowerblue;
+        background: cornflowerblue;
+    }
+    */
     
     .header {
         font-size: 20px;
@@ -72,8 +90,13 @@
     }
     
     .logo {
+        position: fixed;
+        margin: 5px 30px 5px 30px;
+        padding: 5px 30px 5px 30px;
+        align-self: auto;
         justify-content: center;
-        height: 50%vw;
+        height: 10em;
+        width: 15em;
     }
     
     .main-content .info-wrapper {
@@ -183,7 +206,7 @@
         align-self: auto;
         margin: auto;
         padding: 2em;
-        box-shadow: 10px 3px 10px 3px blue;
+        box-shadow: 10px 3px 10px 3px skyblue;
         opacity: 0.6;
     }
     
