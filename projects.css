@@ -10,17 +10,14 @@
 
 .header {
     font-size: 20px;
-    color: #86c1cf;
     background-color: skyblue;
     font-weight: 700;
     flex: 1 1 100px initial;
     opacity: 0.7;
-    padding: 0px
 }
 
-.navbar-brand .logo {
-    height: 170px;
-    width: 170px;
+.navbar-brand img {
+    height: auto;
 }
 
 .nav-item {
@@ -95,8 +92,11 @@ body {
 .main-content {
     display: inline-flexbox;
     color: red;
+    background-color: rgb(250, 248, 248, 0.7);
     text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
     box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    border-radius: 15px;
 }
 
 .main-content .container .btn-group a {

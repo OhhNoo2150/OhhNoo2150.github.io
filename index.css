@@ -25,22 +25,22 @@
     */
     
     .header {
+        height: min-content;
         font-size: 20px;
-        color: #86c1cf;
         background-color: skyblue;
         font-weight: 700;
         flex: 1 1 100px initial;
         opacity: 0.7;
-        padding: 0px
+        margin: 5px;
     }
     
-    .navbar-brand .logo {
-        height: 170px;
-        width: 170px;
+    .navbar-brand img {
+        height: 250px;
+        width: 250px;
     }
     
     .nav-item {
-        height: auto;
+        height: 40%;
         display: inline-flex;
         justify-content: space-evenly;
         align-content: center;
@@ -49,12 +49,12 @@
     }
     
     .nav-item img:hover {
-        box-shadow: #de463b;
+        box-shadow: #04d8f9;
     }
     
     .nav-item img {
-        height: 120px;
-        width: 120px;
+        height: 100px;
+        width: 100px;
     }
     
     #navbar-brand {
@@ -97,23 +97,31 @@
         justify-content: center;
         height: 10em;
         width: 15em;
+        border-radius: 50%;
     }
     
     .main-content .info-wrapper {
         margin: 10px;
-        padding: 40px;
+        padding: auto;
         align-self: auto;
         justify-self: center;
         height: fit-content;
         text-align: center;
+        background-color: rgb(250, 248, 248, 0.8);
+        width: 900px;
+        border-radius: 40px;
     }
     
     .main-content .container h1 {
         margin: 0 auto;
         font-size: 2em;
-        color: red;
+        color: rgb(255, 0, 0, 1);
         justify-content: inline-flex;
         text-align: center;
+    }
+    
+    .main-content .container p {
+        color: rgb(255, 0, 0, 1)
     }
     
     .main-content {
@@ -172,42 +180,42 @@
     }
     
     .main-content .card-1 .container-1 {
-        background-color: #ffffff;
+        background-color: rgb(250, 248, 248, 0.7);
         height: fit-content;
-        width: 1000px;
+        width: 600px;
         justify-content: space-evenly;
         text-align: center;
         align-self: auto;
         margin: auto;
         padding: 2em;
         box-shadow: 10px 3px 10px 3px red;
-        opacity: 0.6;
+        border-radius: 40px;
     }
     
     .main-content .card-1 .container-2 {
-        background-color: #ffffff;
+        background-color: rgba(255, 255, 255, 0.7);
         height: fit-content;
-        width: 1000px;
+        width: 600px;
         justify-content: space-evenly;
         text-align: center;
         align-self: auto;
         margin: auto;
         padding: 2em;
         box-shadow: 10px 3px 10px 3px white;
-        opacity: 0.6;
+        border-radius: 40px;
     }
     
     .main-content .card-1 .container-3 {
-        background-color: #ffffff;
+        background-color: rgb(250, 248, 248, 0.7);
         height: fit-content;
-        width: 1000px;
+        width: 600px;
         justify-content: space-evenly;
         text-align: center;
         align-self: auto;
         margin: auto;
         padding: 2em;
         box-shadow: 10px 3px 10px 3px skyblue;
-        opacity: 0.6;
+        border-radius: 40px;
     }
     
     .container {
