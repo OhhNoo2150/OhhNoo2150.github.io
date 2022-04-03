@@ -182,16 +182,21 @@ iframe {
 }
 
 .copyright {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.25);
-    width: 100px;
+    width: fit-content;
     padding: 5px;
     border-radius: 15px;
+    left: 0;
+    bottom: 0;
 }
 
 .copy-text {
     color: rgb(241, 61, 15);
-    width: 200px;
 }
 
 
