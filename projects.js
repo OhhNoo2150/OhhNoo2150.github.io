@@ -7,7 +7,7 @@ let cx = ctx.canvas.width / 2;
 let cy = ctx.canvas.height / 2;
 
 let confetti = [];
-const confettiCount = 300;
+const confettiCount = 1000;
 const gravity = 0.5;
 const terminalVelocity = 5;
 const drag = 0.075;
@@ -121,3 +121,12 @@ window.addEventListener('resize', function() {
 window.addEventListener('click', function() {
     initConfetti();
 });
+//-----------------Cards------------
+function buttonEffect(buttonId) {
+    let buttonClicked = document.getElementById(buttonId);
+    console.log(buttonClicked);
+    buttonClicked.classList.add('buttonEffect');
+    buttonClicked.addEventListener('transitionend', () => {
+        buttonClicked.classList.remove('buttonEffect');
+    }, { once: true });
+}

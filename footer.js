@@ -3,7 +3,7 @@ const footer = document.getElementById('footer');
 const myFooter = `
     <p>Copyright ©
         ${currentYear}
-        <img class='d-none d-sm-inline' src="./Images/PRFlagAnimated.gif" style='height: 2rem;' alt="My 'Pharma 2 Code' Logo.">
+        <img class='d-none d-sm-inline' src="./Images/PRFlagAnimated.gif" style='height: 2rem;' alt="Wepa!">
         <span style="color:blue;">DIR</span><span style="color:red;">Web</span><span style="color:white;">Development</span>
     </p>
     <a href="https://www.facebook.com/OhhNoo" class="icon facebook">
@@ -30,7 +30,7 @@ const myFooter = `
 const injectMyFooter = () => footer.innerHTML = myFooter;
 
 const footerBackground = () => {
-    footer.style.backgroundColor = 'rgb(50,50,50)';
+    footer.style.backgroundColor = 'rgb(135, 206, 235)';
     footer.style.height = '3rem';
     footer.style.marginTop = '0';
 }

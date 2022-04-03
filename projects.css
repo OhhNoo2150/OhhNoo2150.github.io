@@ -9,10 +9,11 @@
 /* ------------------ Header Code Below ------------------ */
 
 .header {
+    height: 165px;
     font-size: 20px;
     background-color: skyblue;
     font-weight: 700;
-    flex: 1 1 100px initial;
+    flex: 1 1 70px initial;
     opacity: 0.7;
 }
 
@@ -30,7 +31,7 @@
 }
 
 .nav-item img:hover {
-    box-shadow: #de463b;
+    border-color: red;
 }
 
 .nav-item img {
@@ -70,6 +71,8 @@ body {
     background-size: cover;
     height: 100vh;
     overflow-x: hidden;
+    color: red;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 #canvas {
@@ -77,6 +80,10 @@ body {
     height: 100vw;
     z-index: -1;
     position: fixed;
+}
+
+.main-content {
+    justify-items: center;
 }
 
 .main-content h1 {
@@ -89,8 +96,48 @@ body {
     text-align: center;
 }
 
+@media screen and (max-width: 480px) {
+    .main-content,
+    .card,
+    .card-body,
+    .card-text,
+    .card-title,
+    .btn width: 100%;
+    /* The width is 100%, when the viewport is 800px or smaller */
+}
+
+
+/* -------------------new card styling below---------------------------------- */
+
+.card-1,
+.card-2,
+.card-3 {
+    padding: 20px;
+    border-radius: 15px;
+    border: 5px;
+    color: red;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.w3-container img {
+    padding: 10px;
+    border: 5px;
+    border-radius: 15px;
+    background-color: white;
+    border-color: skyblue;
+    color: white;
+    opacity: 1;
+}
+
+.w3-container .simple-shadow {
+    padding: 10px;
+}
+
+
+/* -------------------new card styling above------------------------------- */
+
 .main-content {
-    display: inline-flexbox;
+    display: inline;
     color: red;
     background-color: rgb(250, 248, 248, 0.7);
     text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
@@ -98,6 +145,14 @@ body {
     width: fit-content;
     border-radius: 15px;
 }
+
+.main-content .card-title>p {
+    display: inline-flexbox;
+}
+
+
+/*------------------below is styling for btn-group--------------- 
+
 
 .main-content .container .btn-group a {
     padding-left: 20px;
@@ -114,7 +169,7 @@ body {
     width: 400px;
     border-radius: 10px;
     justify-items: center;
-}
+} -----------above is the styling for btn-group---------------------*/
 
 
 /* ------------------ Footer Code Below ------------------ */
@@ -122,9 +177,8 @@ body {
 .footer-container {
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    width: 100px;
     height: 2em;
-    bottom: 0;
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -134,7 +188,7 @@ body {
 
 /* This is the container for the social media icons */
 
-.social-wrapper {
+.footer-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,21 +198,17 @@ body {
 }
 
 .copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.25);
-    width: fit-content;
+    width: 100px;
     padding: 5px;
     border-radius: 15px;
-    left: 0;
-    bottom: 0;
 }
 
 .copy-text {
     color: rgb(241, 61, 15);
+    width: 200px;
+    padding-right: 50%;
 }
 
 

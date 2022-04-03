@@ -19,57 +19,78 @@
         createNavBar();
     </script>
 
-    <div class="main-content mx-auto">
+    <div class="main-content">
         <!--confetti code below-->
         <canvas class="confetti" id="canvas"></canvas>
         <!--confetti code above-->
-        <h1>Welcome to my projects page</h1>
-        <h2>I have added 3 gifs click on the link or the button to see it in action.</h2>
-        <!--DO NOT forget to add styling to the below links through CSS, set sizes so they are all the same size-->
-        <div class="container mx-auto">
-            <div class="btn-group mx-auto">
-                <a href="https://OhhNoo2150.github.io/Eyes"><img src="./Images/Kakashi_sharingan.gif " alt="Kakashi's Eyes"><br><button>Eyes</button></a>
-                <a href="https://OhhNoo2150.github.io/PacMen"><img src="./Images/pacman.gif" alt="PacMen Factory"><br><button>PacMen Factory</button></a>
-                <a href="https://OhhNoo2150.github.io/Bus_Tracker"><img src="./Images/bus.gif" alt="Bus Tracker"><br><button>Bus Tracker</button></a>
+        <h1 class="simple-shadow" style="font-size:3vw">Welcome to my projects page</h1>
+        <h2 class="simple-shadow" style="font-size:1.5vw">Click on the link for "Run Me" to see it in action or "GitHub" to see the raw code. </h2>
+        <!--the below is the div for your projects-->
+        <!--<div class="container mx-auto">-->
+        <div class="card-1 w-25 mx-auto">
+            <div class="w3-card-4 w3-dark-grey">
+                <div class="w3-container w3-center">
+                    <h2 class="simple-shadow" style="font-size:1.5vw">Eyes Project</h2>
+                    <img src="./Images/Kakashi_sharingan.gif" alt="Eyes Project" style="width:80%"><br>
+                    <button onclick="window.location.href='https://OhhNoo2150.github.io/Eyes;">Run Me</button>
+                    <button onclick="window.location.href='https://github.com/OhhNoo2150/Eyes;">Github Repo</button>
+                </div>
+
             </div>
         </div>
-
-    </div>
-    <div class="footer">
-        <div>
-            <!-- Old classes for footer below mastfoot mt-auto -->
-            <!-- footer social-wrapper -->
-            <footer class="footer-container">
-                <a href="https://www.facebook.com/OhhNoo" class="icon facebook">
-                    <div class="tooltip">Facebook</div>
-                    <span><i class="fab fa-facebook-f"></i></span>
-                </a>
-                <a href="https://twitter.com/Boricua2150" class="icon twitter">
-                    <div class="tooltip">Twitter</div>
-                    <span><i class="fab fa-twitter"></i></span>
-                </a>
-                <a href="https://www.instagram.com/ohhnoo2150/" class="icon instagram">
-                    <div class="tooltip">Instagram</div>
-                    <span><i class="fab fa-instagram"></i></span>
-                </a>
-                <a href="https://github.com/OhhNoo2150" class="icon github">
-                    <div class="tooltip">Github</div>
-                    <span><i class="fab fa-github"></i></span>
-                </a>
-                <a href="https://www.linkedin.com/in/danielrivera/" class="icon linkedin">
-                    <div class="tooltip">LinkedIn</div>
-                    <span><i class="fab fa-linkedin"></i></span>
-                </a>
-                <div class="copyright">
-                    <p class="copy-text">&copy 2022 Daniel Rivera</p>
+        <div class="card-2 w-25 mx-auto">
+            <div class="w3-card-4 w3-dark-grey">
+                <div class="w3-container w3-center">
+                    <h2 class="simple-shadow" style="font-size:1.5vw">PacMen Factory Project</h2>
+                    <img src="./Images/pacman.gif" alt="PacMen Factory Project" style="width:80%"><br>
+                    <button onclick="window.location.href='https://OhhNoo2150.github.io/PacMen;">Run Me</button>
+                    <button onclick="window.location.href='https://github.com/OhhNoo2150/PacMen;">Github Repo</button>
                 </div>
-            </footer>
+            </div>
+            <div class="card-3 w-65 mx-auto">
+                <div class="w3-card-4 w3-dark-grey">
+                    <div class="w3-container w3-center">
+                        <h2 class="simple-shadow" style="font-size:1.5vw">Bus Tracker Project</h2>
+                        <img src="./Images/bus.gif" alt="Real Time Bus Tracker Project" style="width:80%"><br>
+                        <button onclick="window.location.href='https://OhhNoo2150.github.io/Bus_Tracker;">Run Me</button>
+                        <button onclick="window.location.href='https://github.com/OhhNoo2150/Bus_Tracker;">Github Repo</button>
+                    </div>
+                </div>
+            </div>
 
-        </div>
-    </div>
-    </div>
+            <div class="footer">
+                <div>
+                    <!-- footer social-wrapper -->
+                    <footer class="footer-container">
+                        <a href="https://www.facebook.com/OhhNoo" class="icon facebook">
+                            <div class="tooltip">Facebook</div>
+                            <span><i class="fab fa-facebook-f"></i></span>
+                        </a>
+                        <a href="https://twitter.com/Boricua2150" class="icon twitter">
+                            <div class="tooltip">Twitter</div>
+                            <span><i class="fab fa-twitter"></i></span>
+                        </a>
+                        <a href="https://www.instagram.com/ohhnoo2150/" class="icon instagram">
+                            <div class="tooltip">Instagram</div>
+                            <span><i class="fab fa-instagram"></i></span>
+                        </a>
+                        <a href="https://github.com/OhhNoo2150" class="icon github">
+                            <div class="tooltip">Github</div>
+                            <span><i class="fab fa-github"></i></span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/danielrivera/" class="icon linkedin">
+                            <div class="tooltip">LinkedIn</div>
+                            <span><i class="fab fa-linkedin"></i></span>
+                        </a>
+                        <div class="copyright">
+                            <p class="copy-text">&copy 2022 Daniel Rivera</p>
+                        </div>
+                    </footer>
+                </div>
+            </div>
 
-    <script src="./projects.js"></script>
+
+            <script src="./projects.js"></script>
 </body>
 
 </html>

@@ -19,10 +19,11 @@
 */
 
 .header {
+    height: 165px;
     font-size: 20px;
     background-color: skyblue;
     font-weight: 700;
-    flex: 1 1 100px initial;
+    flex: 1 1 70px initial;
     opacity: 0.7;
 }
 
@@ -85,6 +86,14 @@ body {
     box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
 }
 
+@media screen and (max-width: 480px) {
+    .main-content,
+    .accordion,
+    .panel,
+    width: 100%;
+    /* The width is 100%, when the viewport is 800px or smaller */
+}
+
 
 /* accordion styling below */
 
@@ -113,8 +122,12 @@ body {
     background-color: white;
     display: none;
     overflow: hidden;
-    opacity: 0.8;
+    opacity: 0.9;
     width: 50%;
+    text-align: center;
+    font-size: 1.2vw;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+    ;
 }
 
 
@@ -137,7 +150,7 @@ body {
     flex-direction: row;
     width: 100vw;
     height: 2em;
-    bottom: 0;
+    bottom: ;
     align-items: center;
     justify-content: center;
     position: fixed;

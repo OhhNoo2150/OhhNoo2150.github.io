@@ -25,11 +25,11 @@
     */
     
     .header {
-        height: min-content;
+        height: 165px;
         font-size: 20px;
         background-color: skyblue;
         font-weight: 700;
-        flex: 1 1 100px initial;
+        flex: 1 1 70px initial;
         opacity: 0.7;
         margin: 5px;
     }
@@ -40,7 +40,7 @@
     }
     
     .nav-item {
-        height: 40%;
+        height: 20%;
         display: inline-flex;
         justify-content: space-evenly;
         align-content: center;
@@ -63,18 +63,24 @@
         padding-left: 3%;
     }
     
+    .navbar-brand>img {
+        padding-bottom: 25%;
+        border: none;
+    }
+    
     #navbar-nav {
         padding-right: 0;
+        padding-bottom: 10%;
         flex: 1 0 auto;
         justify-content: flex-end;
     }
     
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 480px) {
         #navbar-brand {
             display: none;
         }
         #navbar-nav {
-            height: 100%;
+            height: 70%;
             width: 100%;
             justify-content: center;
             flex: 1 1 auto;
@@ -87,6 +93,13 @@
         background-size: cover;
         height: 100vh;
         overflow-x: hidden;
+    }
+    
+    @media screen and (max-width: 480px) {
+        .logo {
+            width: 100%;
+            /* The width is 100%, when the viewport is 800px or smaller */
+        }
     }
     
     .logo {
@@ -112,16 +125,23 @@
         border-radius: 40px;
     }
     
+    .main-content .simple-shadow .h1 {
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+    
     .main-content .container h1 {
         margin: 0 auto;
-        font-size: 2em;
         color: rgb(255, 0, 0, 1);
         justify-content: inline-flex;
         text-align: center;
     }
     
     .main-content .container p {
-        color: rgb(255, 0, 0, 1)
+        color: rgb(255, 0, 0, 1);
+    }
+    
+    .main-content .simple-shadow {
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
     }
     
     .main-content {
@@ -137,10 +157,21 @@
         height: 200px;
     }
     
+    .main-content .card-1 .simple-shadow {
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+    
     @media screen and (max-width: 480px) {
         img {
             width: 400px;
         }
+    }
+    
+    @media screen and (max-width: 480px) {
+        .main-content,
+        .card-1,
+        width: 100%;
+        /* The width is 100%, when the viewport is 800px or smaller */
     }
     
     .main-content .card-1 .container-1 p {
@@ -244,8 +275,8 @@
         bottom: 0;
         align-items: center;
         justify-content: center;
-        position: absolute;
-        margin-bottom: 2em;
+        position: fixed;
+        margin-bottom: 5px;
         align-self: flex-end;
     }
     /* This is the container for the social media icons */
