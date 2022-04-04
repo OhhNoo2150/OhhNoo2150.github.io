@@ -104,15 +104,15 @@ remove comment tags when ready to deploy particles*/
     /* The width is 100%, when the viewport is 800px or smaller */
 }
 
-.main-content {
+.main-content .container-1 {
     display: inline-flexbox;
     color: red;
     background-color: rgba(255, 255, 255, 0.7);
     text-align: center;
     text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
-    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
     width: 730px;
     border-radius: 40px;
+    box-shadow: 10px 3px 10px 3px rgba(135, 206, 235, 0.6);
 }
 
 .main-content .simple-shadow {
@@ -168,6 +168,7 @@ iframe {
     -o-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=.2);
+    box-shadow: 10px 3px 10px 3px rgba(135, 206, 235, 0.6);
 }
 
 
