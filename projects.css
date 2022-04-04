@@ -134,6 +134,39 @@ body {
     padding: 10px;
 }
 
+.card-1 .w3-container .btn {
+    background-color: red;
+    border-color: skyblue;
+    color: white;
+    margin-left: 25px;
+}
+
+.card-2 .w3-container .btn {
+    background-color: red;
+    border-color: skyblue;
+    color: white;
+    margin-left: 25px;
+}
+
+.card-3 .w3-container .btn {
+    background-color: red;
+    border-color: skyblue;
+    color: white;
+    margin-left: 25px;
+}
+
+.card-1 .w3-container .btn:hover {
+    background-color: blue;
+}
+
+.card-2 .w3-container .btn:hover {
+    background-color: blue;
+}
+
+.card-3 .w3-container .btn:hover {
+    background-color: blue;
+}
+
 
 /* -------------------new card styling above------------------------------- */
 
@@ -201,12 +234,14 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    color: #ffffff;
+    color: red;
     background-color: rgba(0, 0, 0, 0.25);
     width: fit-content;
     border-radius: 15px;
     left: 0;
     bottom: 0;
+    margin-top: 10px;
+    margin-left: -730px;
 }
 
 .copy-text {

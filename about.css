@@ -92,8 +92,10 @@ body {
     .main-content,
     .accordion,
     .panel,
-    width: 100%;
-    /* The width is 100%, when the viewport is 800px or smaller */
+    {
+        width: 100%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+    }
 }
 
 
