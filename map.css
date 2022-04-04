@@ -174,15 +174,6 @@ iframe {
 
 /* ------------------ Footer Code Below ------------------ */
 
-.footer-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
 .copyright {
     display: flex;
     justify-content: flex-end;
@@ -204,7 +195,7 @@ iframe {
 
 /* This is the container for the social media icons */
 
-.social-wrapper {
+.footer-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -244,7 +235,7 @@ iframe {
     align-items: flex-end;
 }
 
-.footer .social-wrapper .tooltip {
+.footer .footer-container .tooltip {
     position: absolute;
     top: 0;
     line-height: 1.5;
@@ -259,7 +250,7 @@ iframe {
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.footer .social-wrapper .tooltip::before {
+.footer .footer-container .tooltip::before {
     position: absolute;
     content: "";
     height: 8px;
@@ -271,49 +262,49 @@ iframe {
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.footer .social-wrapper .icon:hover .tooltip {
+.footer .footer-container .icon:hover .tooltip {
     top: -45px;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
 }
 
-.footer .social-wrapper .icon:hover span,
-.footer .social-wrapper .icon:hover .tooltip {
+.footer .footer-container .icon:hover span,
+.footer .footer-container .icon:hover .tooltip {
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
 
-.footer .social-wrapper .facebook:hover,
-.footer .social-wrapper .facebook:hover .tooltip,
-.footer .social-wrapper .facebook:hover .tooltip::before {
+.footer .footer-container .facebook:hover,
+.footer .footer-container .facebook:hover .tooltip,
+.footer .footer-container .facebook:hover .tooltip::before {
     background-color: #3b5999;
     color: #ffffff;
 }
 
-.footer .social-wrapper .twitter:hover,
-.footer .social-wrapper .twitter:hover .tooltip,
-.footer .social-wrapper .twitter:hover .tooltip::before {
+.footer .footer-container .twitter:hover,
+.footer .footer-container .twitter:hover .tooltip,
+.footer .footer-container .twitter:hover .tooltip::before {
     background-color: #46c1f6;
     color: #ffffff;
 }
 
-.footer .social-wrapper .instagram:hover,
-.footer .social-wrapper .instagram:hover .tooltip,
-.footer .social-wrapper .instagram:hover .tooltip::before {
+.footer .footer-container .instagram:hover,
+.footer .footer-container .instagram:hover .tooltip,
+.footer .footer-container .instagram:hover .tooltip::before {
     background-color: #e1306c;
     color: #ffffff;
 }
 
-.footer .social-wrapper .github:hover,
-.footer .social-wrapper .github:hover .tooltip,
-.footer .social-wrapper .github:hover .tooltip::before {
+.footer .footer-container .github:hover,
+.footer .footer-container .github:hover .tooltip,
+.footer .footer-container .github:hover .tooltip::before {
     background-color: #333333;
     color: #ffffff;
 }
 
-.footer .social-wrapper .linkedin:hover,
-.footer .social-wrapper .linkedin:hover .tooltip,
-.footer .social-wrapper .linkedin:hover .tooltip::before {
+.footer .footer-container .linkedin:hover,
+.footer .footer-container .linkedin:hover .tooltip,
+.footer .footer-container .linkedin:hover .tooltip::before {
     background-color: #de463b;
     color: #ffffff;
 }
