@@ -41,8 +41,8 @@
 }
 
 .nav-item img {
-    height: 120px;
-    width: 120px;
+    height: 100px;
+    width: 100px;
     border-radius: 30px;
 }
 
@@ -276,6 +276,7 @@ q {
     width: 100%;
     height: 100%;
     position: relative;
+    padding-top: 200px;
 }
 
 
