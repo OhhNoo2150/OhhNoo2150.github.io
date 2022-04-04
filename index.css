@@ -319,9 +319,9 @@
     .linkedin {
         color: blue;
         position: relative;
-        display: inline-flex;
+        display: flex;
         justify-content: center;
-        align-items: flex-end;
+        align-items: center;
     }
     
     .footer .footer-container .tooltip {
