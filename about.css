@@ -43,6 +43,7 @@
 .nav-item img {
     height: 120px;
     width: 120px;
+    border-radius: 30px;
 }
 
 #navbar-brand {
@@ -77,6 +78,7 @@ body {
     background-size: cover;
     height: auto;
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .main-content {
@@ -98,19 +100,21 @@ body {
 /* accordion styling below */
 
 .accordion {
-    margin-left: 400px;
+    margin-left: 500px;
+    margin-right: 500px;
     background-color: skyblue;
     color: #444;
     cursor: pointer;
     padding: 7px;
-    width: 50%;
-    text-align: left;
+    width: 1000px;
+    text-align: center;
     border: none;
     outline: none;
     transition: 0.4s;
     align-items: center;
     align-self: center;
     overflow-y: scroll;
+    border-radius: 20px;
 }
 
 .accordion:hover {
@@ -118,17 +122,18 @@ body {
 }
 
 .panel {
-    margin-left: 400px;
+    margin-left: 500px;
+    margin-right: 500px;
     padding: 7px;
     background-color: white;
     display: none;
     overflow: hidden;
     opacity: 0.9;
-    width: 50%;
+    width: 1000px;
     text-align: center;
     font-size: 1.2vw;
     text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
-    ;
+    border-radius: 20px;
 }
 
 
@@ -144,18 +149,133 @@ body {
 }
 
 
+/* ----------Quote section styling below---------- */
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+    margin-right: 500px;
+    margin-left: 500px;
+    margin-top: 50px;
+    border-radius: 20px;
+    width: 1000px;
+}
+
+
+/* Slides */
+
+.mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+
+/* The dot/bullet/indicator container */
+
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+    margin-right: 500px;
+    margin-left: 500px;
+    border-radius: 20px;
+    opacity: 0.8;
+    width: 1000px;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+
+/* Add a background color to the active dot/circle */
+
+.active,
+.dot:hover {
+    background-color: skyblue;
+}
+
+
+/* Add an italic font style to all quotes */
+
+q {
+    font-style: italic;
+}
+
+
+/* Add a blue color to the author */
+
+.author {
+    color: skyblue;
+}
+
+
+/*  ---------- Quote Section Styling above ---------- */
+
+
+/* 
+ */
+
+
 /* ------------------ Footer Code Below ------------------ */
 
 .footer-container {
     display: flex;
-    flex-direction: row;
-    width: 100vw;
-    height: 2em;
-    bottom: ;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    margin-bottom: 2em;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 

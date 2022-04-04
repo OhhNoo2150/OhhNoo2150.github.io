@@ -15,10 +15,9 @@
     <div id="header" class="header"></div>
 
     <script src="./navbar.js"></script>
-    <script src="./about.js"></script>
+
     <script>
         createNavBar();
-        collapseList();
     </script>
     <div class="main-content mx-auto">
         <button class="accordion">Chapter 1: The Beginnings</button>
@@ -41,7 +40,7 @@
                 I'm not ashamed to ask for help. I can tell that day by day my understanding of the concepts and information are increasing.<br>
             </p>
             <div class="row w-50 mx-auto">
-                <img src="./Images/windingRoad.gif" alt="not all who wander are lost">
+                <img src="./Images/windingRoad.gif" style="border-radius: 50%" alt="not all who wander are lost">
             </div>
         </div>
 
@@ -50,10 +49,39 @@
             <p>I came into the program cold without any idea or knowledge on what I was getting myself into; so charting a path proved to be a little difficult, after some reflection and learning different web development pathways, I am zeroing in on penetration
                 testing. <br>This journey is a long one, filled with many twist and turns, but I am here for it, and look forward to fully immersing myself in learning multiple coding languages to reach my objectives.<br>
             </p>
-            <div class="row w-50 mx-auto"><img src="./Images/PenTest.jpeg" alt="Penetration Testing">
+            <div class="row w-50 mx-auto"><img src="./Images/PenTest.jpeg" style="border-radius:50%" alt="Penetration Testing">
             </div>
         </div>
     </div>
+    <div class="slideshow-container">
+        <br>
+        <!-- Full-width slides/quotes -->
+        <div class="mySlides">
+            <q>Look at a stone cutter hammering away at his rock, perhaps a hundred times without as much as a crack showing in it. Yet at the hundred-and-first blow it will split in two, and I know it was not the last blow that did it, but all that had gone before.</q>
+            <p class="author">- Jacob Riis, 20th Century Journalist</p>
+        </div>
+
+        <div class="mySlides">
+            <q>For the mission's sake, for our country's sake, and the sake of the men who carried the Division's colors in past battles — 'who fought for life and never lost their nerve' — carry out your mission and keep your honor clean. Demonstrate to the world there is 'No Better Friend — No Worse Enemy' than a US Marine.</q>
+            <p class="author">- Gen. James Mattis, USMC(Retired)</p>
+        </div>
+
+        <div class="mySlides">
+            <q>Give a man a program, frustrate him for a day.
+            Teach a man to program, frustrate him for a lifetime.</q>
+            <p class="author">- Muhammad Waseem, Professional Boxer</p>
+        </div>
+
+        <!-- Next/prev buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- Dots/bullets/indicators -->
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
     </div>
     <div class="footer">
         <!-- <div>
