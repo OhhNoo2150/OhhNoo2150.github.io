@@ -159,14 +159,17 @@ body {
 
 .card-1 .w3-container .btn:hover {
     background-color: blue;
+    color: red;
 }
 
 .card-2 .w3-container .btn:hover {
     background-color: blue;
+    color: red;
 }
 
 .card-3 .w3-container .btn:hover {
     background-color: blue;
+    color: red;
 }
 
 
